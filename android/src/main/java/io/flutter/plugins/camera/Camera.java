@@ -551,8 +551,6 @@ public class Camera {
           lockedCaptureOrientation == null
               ? deviceOrientationListener.getMediaOrientation()
               : deviceOrientationListener.getMediaOrientation(lockedCaptureOrientation));
-      // set jpeg quality to 70 % 
-      caputreBuilder.set(CaptureRequest.JPEG_QUALITY, (byte)70);
 
       switch (flashMode) {
         case off:
